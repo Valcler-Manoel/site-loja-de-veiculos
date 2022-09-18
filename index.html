@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- LINK PARA FONTE  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- LINK PARA FONTE  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <button onclick="explique_fabrica_1()">Indústria de base</button>
+<button onclick="explique_fabrica_2()">Indústria de base</button>
+
+<div id="container"></div>
+
+<script src="script.js"></script>
+    
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"> <span>CMC</span>Company </a>
+
+    <nav class="navbar">
+        <a href="#home">Início</a>
+        <a href="#vehicles">Veículos</a>
+        <a href="#services">Serviços</a>
+        <a href="#featured">Categorias</a>
+        <a href="#reviews">Avaliações</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <div id="login-btn">
+        <button class="btn">login</button>
+        <i class="far fa-user"></i>
+    </div>
+
+</header> 
+    
+<div class="login-form-container">
+
+    <span id="close-login-form" class="fas fa-times"></span>
+
+    <form action="">
+        <h3>login do usuário</h3>
+        <input type="email" placeholder="Email" class="box">
+        <input type="password" placeholder="Senha" class="box">
+        <p> Esqueceu sua senha? <a href="#">Clique aqui!</a> </p>
+        <input type="submit" value="login" class="btn">
+        <p>ou faça login com</p>
+        <div class="buttons">
+            <a href="#" class="btn"> google </a>
+            <a href="#" class="btn"> facebook </a>
+        </div>
+        <p> Não tem uma conta? <a href="#">Crie uma!</a> </p>
+    </form>
+
+</div>
+
+<section class="home" id="home">
+
+    <h3 data-speed="-2" class="home-parallax">seu carro novo!</h3>
+    <img data-speed="5" class="home-parallax" src="image/2cars.png" alt="">
+    <a data-speed="7" href="#" class="btn home-parallax">Explore nossos carros!</a>
+
+</section>
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>150+</h3>
+            <p>marcas</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>4779+</h3>
+            <p>carros vendidos</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+            <h3>327+</h3>
+            <p>clientes satisfeitos</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>1558+</h3>
+            <p>novos carros</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="vehicles" id="vehicles">
+
+    <h1 class="heading"> Veículos <span>Raros</span> </h1>
+
+    <div class="swiper vehicles-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/impalazao.jpg" alt="">
+                <div class="content">
+                    <h3>Impala Winchesters</h3>
+                    <div class="price"> <span>preço : </span> A negociar </div>
+                    <p>
+                        novo!
+                        <span class="fas fa-circle"></span> 1967
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> gasolina
+                        <span class="fas fa-circle"></span> 120mph
+                    </p>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/dmc12.jpg" alt="">
+                <div class="content">
+                    <h3>Delorean DMC-12</h3>
+                    <div class="price"> <span>Preço : </span> A negociar </div>
+                    <p>
+                        novo!
+                        <span class="fas fa-circle"></span> 1982
+                        <span class="fas fa-circle"></span> Manual
+                        <span class="fas fa-circle"></span> Gasolina
+                        <span class="fas fa-circle"></span> 88mph
+                    </p>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="image/speed-racer.jpg" alt="">
+                <div class="content">
+                    <h3>Speed Racer</h3>
+                    <div class="price"> <span>preço: </span> Indeterminado </div>
+                    <p>
+                        novo!
+                        <span class="fas fa-circle"></span> 2008
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> premium
+                        <span class="fas fa-circle"></span> 200mph
+                    </p>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/batmobilenew2.jpg">
+                <div class="content">
+                    <h3>Batmobile</h3>
+                    <div class="price"> <span>price : </span> A negociar </div>
+                    <p>
+                        novo!
+                        <span class="fas fa-circle"></span> 2005
+                        <span class="fas fa-circle"></span> automático
+                        <span class="fas fa-circle"></span> Podium
+                        <span class="fas fa-circle"></span> 158mph
+                    </p>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/ecto1.jpg" alt="">
+                <div class="content">
+                    <h3>Ghostbusters ECTO-1</h3>
+                    <div class="price"> <span> preço: </span> Indeterminado </div>
+                    <p>
+                        novo!
+                        <span class="fas fa-circle"></span> 1959
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> Gasolina
+                        <span class="fas fa-circle"></span> 130mph
+                    </p>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/fusca.jpg" alt="">
+                <div class="content">
+                    <h3>Herbie</h3>
+                    <div class="price"> <span>preço : </span> A negociar </div>
+                    <p>
+                        novo!
+                        <span class="fas fa-circle"></span> 1968
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> gasolina
+                        <span class="fas fa-circle"></span> 115mph
+                    </p>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading"> Nossos <span>serviços</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-car"></i>
+            <h3>Venda de Carros</h3>
+             <p>
+            <a href="#" class="btn"> Saiba mais</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>Reparo de peças</h3>
+            <p>
+            <a href="#" class="btn"> Saiba mais</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-crash"></i>
+            <h3>Seguro de automóvel</h3>
+            <p>
+            <a href="#" class="btn"> Saiba mais</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-car-battery"></i>
+            <h3>Substituição Elétrica</h3>
+            <p>
+            <a href="#" class="btn"> Saiba mais</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-gas-pump"></i>
+            <h3>Troca de óleo</h3>
+            <p>
+            <a href="#" class="btn"> Saiba mais</a>
+        </div>
+
+
+    </div>
+
+</section>
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>novos</span> carros </h1>
+
+    <div class="swiper featured-slider">
+
+       <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/car-1.png" alt="">
+                <div class="content">
+                    <h3>Mercedes SL500</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$78,678</div>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/car-2.png" alt="">
+                <div class="content">
+                    <h3>MG HS</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$42,900</div>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/car-3.png" alt="">
+                <div class="content">
+                    <h3>Yandex</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$17,800</div>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/car-4.png" alt="">
+                <div class="content">
+                    <h3>Audi EQC Eletric</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$87,899</div>
+                    <a href="#" class="btn">Conheça</a>
+                </div>
+            </div>
+
+       </div>
+
+       <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-5.png" alt="">
+                 <div class="content">
+                     <h3>Kia Sportage</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">$24,090</div>
+                     <a href="#" class="btn">Conheça</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-6.png" alt="">
+                 <div class="content">
+                     <h3>Honda Civic</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">$24,400</div>
+                     <a href="#" class="btn">Conheça</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-7.png" alt="">
+                 <div class="content">
+                     <h3>Kia Sorento</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <div class="price">$30,560</div>
+                     <a href="#" class="btn">Conheça</a>
+                 </div>
+             </div>
+ 
+             <div class="swiper-slide box">
+                 <img src="image/car-8.png" alt="">
+                 <div class="content">
+                     <h3>Chevy Equinox</h3>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         
+                     </div>
+                     <div class="price">$23,800</div>
+                     <a href="#" class="btn">Conheça</a>
+                 </div>
+             </div>
+ 
+        </div>
+ 
+        <div class="swiper-pagination"></div>
+ 
+     </div>
+
+</section>
+
+<section class="newsletter">
+    
+    <h3>inscreva-se para as últimas atualizações </h3>
+
+
+   <form action="">
+        <input type="email" placeholder="Insira seu email">
+        <input type="submit" value="Inscrever-se">
+   </form>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> avaliações dos <span>clientes</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <div class="content">
+                    <p>Loja simplesmente incrível!</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <div class="content">
+                    <p>Magnífico...</p>
+                    <h3>Sarah Connor</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <div class="content">
+                    <p>Toda a equipe estão de parabéns, peguei meu carro sem nenhuma dor de cabeça.</p>
+                    <h3>Rubberd Stoner</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <div class="content">
+                    <p>Serviço rápido, de qualidade e seguro.</p>
+                    <h3>Samarah Liza</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-5.png" alt="">
+                <div class="content">
+                    <p>Empresa maravilhosa.</p>
+                    <h3>Joan Kleber</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-6.png" alt="">
+                <div class="content">
+                    <p>Os serviços só tendem a melhorar!</p>
+                    <h3>Marisa Luiza</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"><span>contate-</span> nos</h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.301470703646!2d-38.538241184646736!3d-3.7443621443038446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7491a5cfc50e5%3A0x35b7fad8eb59ba84!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20do%20Cear%C3%A1%20%7C%20Campus%20Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1636655003858!5m2!1spt-BR!2sbr"allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>Entre em contato!</h3>
+            <input type="text" placeholder="Seu nome" class="box">
+            <input type="email" placeholder="Seu email" class="box">
+            <input type="tel" placeholder="Assunto" class="box">
+            <textarea placeholder="Mensagem" class="box" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Nossos locais</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Brasil </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japão </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> frança </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> rússia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Estados Unidos </a>
+        </div>
+
+        <div class="box">
+            <h3>links rápidos</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Início </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Veículos </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Serviços </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Categorias </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Avaliações </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Contato </a>
+        </div>
+
+        <div class="box">
+            <h3>informações de contato</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> cmccompanyservices@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Fortaleza, Brazil - 400104 </a>
+        </div>
+
+        <div class="box">
+            <h3>Informações de contato</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
